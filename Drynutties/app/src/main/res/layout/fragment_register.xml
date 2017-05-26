@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fd803b"
+    tools:context="com.ecommerce.r1000.rakshit.drynutties.registerFragment"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION"
+        android:textAllCaps="true"
+        android:textSize="40dp"
+        android:shadowColor="@color/background_material_dark"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:id="@+id/textView7" />
+
+    <EditText
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:id="@+id/name"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="10dp"
+android:hint="Name"
+    android:inputType="textCapWords"
+    android:imeOptions="actionNext"
+    android:layout_marginRight="10dp"
+
+    android:background="@drawable/textbox_shape"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:id="@+id/email"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Email"
+        android:imeOptions="actionNext"
+android:inputType="textEmailAddress"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/textbox_shape"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:id="@+id/pass"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Password"
+        android:imeOptions="actionNext"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mybutton"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:id="@+id/cnfpass"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Confirm Password"
+        android:imeOptions="actionDone"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mybutton"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@+id/abc"
+
+        android:visibility="gone"
+        android:layout_margin="10dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:visibility="visible"
+        android:enabled="false"
+        android:layout_margin="20dp"
+        android:id="@+id/button3"
+        android:textColor="@android:color/white"
+        android:background="@drawable/mybutton"
+
+        android:layout_gravity="right" />
+
+</LinearLayout>

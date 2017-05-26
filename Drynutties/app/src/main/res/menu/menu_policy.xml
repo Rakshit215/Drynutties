@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ecommerce.r1000.rakshit.drynutties.policyActivity">
+    <item
+        android:id="@+id/action_cart"
+        android:orderInCategory="20"
+        android:title="Cart"
+        android:icon="@drawable/icons"
+        app:showAsAction="ifRoom"
+
+        ></item>
+
+</menu>

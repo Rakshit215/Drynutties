@@ -1,0 +1,219 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecommerce.r1000.rakshit.drynutties.CartActivity$PlaceholderFragment"
+    android:scrollbars="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+     >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linearLayout"
+       >
+
+    <TextView
+        android:text="Your Cart!"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:freezesText="false"
+        android:background="#fd803b"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content" />
+        <view
+            android:id="@+id/recycler_view4"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+
+
+
+          />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/apply"
+            android:visibility="gone">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/applybtn"
+                android:background="@drawable/mybutton"
+                android:text="Apply"/>
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/payment">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Cart SubTotal "
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:id="@+id/csubt" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Shipping Cost"
+                android:gravity="center"
+                android:id="@+id/scost" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="Discount"
+                android:id="@+id/discn" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/discndet"
+                    android:textSize="8dp"
+                    android:text=""
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Grand Total"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/gtotal" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <EditText
+                    android:hint="Enter coupon"
+                    android:padding="3dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="106dp"
+android:id="@+id/cpned"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/cpn_bdr"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic"
+                    android:layout_height="30dp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Coupon"
+                    android:layout_margin="4dp"
+                    android:id="@+id/cpn1"
+android:padding="2dp"
+  android:textSize="12dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/mybutton"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/cod"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cash on Delivery"
+                        android:checked="true" />
+                    >
+                    <RadioButton
+                        android:id="@+id/citrusopt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Credit Card\nDebit Card\t\t\t( Citrus Pay )\nNet Banking" />
+
+                    <RadioButton
+                        android:id="@+id/payu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:text="Credit Card\nDebit Card\t\t\t ( PayU Money )\nNet Banking" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Purchase"
+            android:id="@+id/buy"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mybutton"
+            android:layout_centerHorizontal="true" />
+
+</LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

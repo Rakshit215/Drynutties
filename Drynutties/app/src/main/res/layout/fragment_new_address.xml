@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ecommerce.r1000.rakshit.drynutties.newAddressFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/name"
+        android:background="@drawable/mybutton"
+        android:hint="Name" />
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/email"
+        android:background="@drawable/mybutton"
+        android:hint="Email" />
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/phn"
+        android:background="@drawable/mybutton"
+        android:hint="Phone Number"
+        android:inputType="number"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ship_address"
+        android:background="@drawable/mybutton"
+        android:hint="Shipping Address"
+        />
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ship_ci"
+        android:background="@drawable/mybutton"
+        android:hint="Shipping City"
+        />
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ship_sta"
+        android:background="@drawable/mybutton"
+        android:hint="Shipping State"
+        />
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ship_zi"
+        android:background="@drawable/mybutton"
+        android:hint="Shipping Zip"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/holo_blue"
+        android:id="@+id/paybut"
+        android:text="Pay"/>
+
+</LinearLayout>
